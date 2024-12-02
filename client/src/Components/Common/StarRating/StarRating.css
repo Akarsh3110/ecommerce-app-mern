@@ -1,0 +1,9 @@
+.star-button{
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+}
+.star-button:hover{
+    background-color: grey;
+    cursor: pointer;
+}

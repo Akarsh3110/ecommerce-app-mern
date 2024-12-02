@@ -1,0 +1,347 @@
+.AddProduct{
+    width: 100%;
+    height: 89vh;
+    /* background-color: rgb(202, 145, 71); */
+    background-color: #F5F6FA;
+    z-index: 0;
+    padding: 12px;
+}
+.AddProduct>.addproduct-contents{
+    width: 100%;
+    height: 100%;
+    /* background-color: chartreuse; */
+    background-color: #F5F6FA;
+}
+.addproduct-contents>h2{
+    height: 44px;
+    font-family: 'Nunito Sans';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43.65px;
+    letter-spacing: -0.11428570002317429px;
+    text-align: left;
+    color: #202224;
+}
+.addproduct-container{
+    width: 100%;
+    height: 90%;
+    /* background-color: aquamarine; */
+    background-color: #FFFFFF;
+    display: flex;
+
+}
+.addproduct-container>.imageupload{
+    width:30%;
+    height: 100%;
+    /* background-color: blue; */
+    background-color: transparent;
+}
+.addproduct-container>.addproduct-form{
+    width: 70%;
+    height: 100%;
+    /* background-color: antiquewhite; */
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+.addproduct-form>.input-title{
+    width:440px;
+    height: 44px;
+    /* background-color: brown; */
+    background-color: transparent;
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+.input-title>input{
+    width:384px;
+    height: 44px;
+    font-family: 'Poppins';
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.4px;
+    text-align: left;
+    color: #141718;
+    border: none;
+    background-color: transparent;
+}
+.input-title>input::placeholder{
+    font-family: 'Poppins';
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.4px;
+    text-align: left;
+    color: #141718;
+}
+.addproduct-form>.input-description{
+    width: 508px;
+    height: 26px;
+    /* background-color: azure; */
+    border:none ;
+
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color:#6C7275;
+}
+.addproduct-form>.input-description::placeholder{
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color:#6C7275;
+}
+.addproduct-form>.prices{
+    width: 508px;
+    height: 34px;
+    display: flex;
+    gap: 6px;
+   /* background-color: chocolate; */
+   background-color: transparent;
+}
+.prices>.sale-price{
+    width: 190px;
+    height: 34px;
+    /* background-color: rgb(173, 127, 57); */
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.prices>.sale-price>input{
+    /* width: 129px; */
+    width: 162px;
+    height: 34px;
+    background-color: transparent;
+    border: none;
+    
+    font-family: 'Poppins';
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: #121212;
+}
+.prices>.sale-price>input::placeholder{
+    font-family: 'Poppins';
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: #121212;
+}
+.prices>.real-price{
+    /* width: 150px; */
+    width: 100%;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    /* background-color: aqua; */
+    background-color: transparent;
+}
+.prices>.real-price>input{
+    width: 337px;
+    height: 34px;
+    background-color: transparent;
+    border: none;
+    
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: #121212;
+}
+.prices>.real-price>input::placeholder{
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: -0.6px;
+    text-align: left;
+    color: #121212;
+}
+
+.mid-form{
+    width: 116px;
+    height: 140px;
+    /* background-color: brown; */
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 0px 16px 0px;
+}
+.mid-form>.measurement{
+    width: 100%;
+    height: 66px;
+    background-color: #F5F6FA;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.measurement>label{
+    height: 26px;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    color: #6C7275;
+}
+.measurement>input{
+    width: 107px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+
+
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: #000000;
+}
+.mid-form>.color{
+    width: 112px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    /* background-color: blue; */
+    background-color: transparent;
+    /* gap: 16px; */
+    gap: 5px;
+}
+.color>label{
+    width: 100%;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    color: #6C7275;
+    /* background-color: yellow; */
+}
+.color>input{
+    width: 100%;
+    height: 100%;
+    visibility: none;
+    display: none;
+
+
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    color: #6C7275;
+
+}
+.color>img{
+    width: 24px;
+    height: 24px;
+}
+/* .color>input::placeholder{
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    color: #6C7275;
+} */
+
+.addproduct-form>.saveAdd{
+    width: 251px;
+    height: 77px;
+    border-radius: 32px;
+    min-width: 160.75px;
+    background-color: #141718;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+    box-shadow: 0px 2.01px 6.03px 0px #0000004D;
+    box-shadow: 0px 8.04px 16.07px 6.03px #00000026;
+
+    font-family: 'Poppins';
+    font-size: 28.13px;
+    font-weight: 600;
+    line-height: 40.19px;
+    letter-spacing: 0.20093457400798798px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+.addproduct-form>.category{
+    width: 508px;
+    height: 26px;
+    /* background-color: azure; */
+    border:none ;
+
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color:#6C7275;
+}
+.addproduct-form>.category::placeholder{
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color:#6C7275;
+}
+.addproduct-form>.stock{
+    width: 508px;
+    height: 26px;
+    /* background-color: azure; */
+    border:none ;
+
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color:#6C7275;
+}
+.addproduct-form>.stock::placeholder{
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color:#6C7275;
+}
+
+.addproduct-form>.delete{
+    height:41px; 
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40.19px;
+    letter-spacing: 0.20093457400798798px;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    color: #FF0000;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}

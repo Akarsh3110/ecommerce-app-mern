@@ -1,0 +1,76 @@
+.AdminProduct{
+    width: 100%;
+    height: 89vh;
+    /* background-color: rgb(51, 112, 112); */
+    background-color: #F5F6FA;
+    z-index: 0;
+    padding: 12px;
+    position: relative;
+}
+.AdminProduct>button{
+    width: 393px;
+    height: 112px;
+    background-color:#FFFFFF;
+    box-shadow: 0px 2.01px 6.03px 0px #0000004D;
+    box-shadow: 0px 8.04px 16.07px 6.03px #00000026;
+    border-radius: 32px;
+    border: none;
+
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+ 
+}
+.AdminProduct>button>a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 28.13px;
+    font-weight: 600;
+    line-height: 40.19px;
+    letter-spacing: 0.20093457400798798px;
+    text-align: center;
+    color: #141718;
+}
+.AdminProduct>.admin-product-contents{
+    width: 100%;
+    /* height: 100%; */
+    height: 89vh;
+    display: flex;
+    /* background-color: aqua; */
+    background-color: #F5F6FA;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 0;
+}
+.admin-product-contents>h2{
+    height: 44px;
+    font-family: 'Nunito San's;
+    font-size: 32px;
+    line-height: 43.65px;
+    letter-spacing: -0.11428570002317429px;
+    text-align: left;
+    color: #202224;
+}
+.product-list{
+    width: 100%;
+    /* height: 80vh; */
+    /* background-color: chartreuse; */
+    background-color: #F5F6FA;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    z-index: 0;
+}
+.banner{
+    width: 100%;
+    height: 346px;
+    background-color: #202224;
+    background: url('../../../assets/LowerBanner/Image.png');
+    background-size: cover;
+}

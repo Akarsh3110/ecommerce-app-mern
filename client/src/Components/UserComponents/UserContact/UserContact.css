@@ -1,0 +1,131 @@
+.UserContact{
+    width: 100vw;
+    height: 1000px;
+    /* height: 1749px; */
+    /* background-color: blue; */
+    background-color: #FFFFFF;
+    padding: 60px 160px 100px 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.UserContact>h2{
+    font-family: 'Poppins';
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    color: #141718;
+}
+.UserContact>h4{
+    font-family: 'Poppins';
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    color:#6C7275;
+}
+.UserContact>p{
+    font-family: 'Inter';
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    color: #141718;
+}
+.UserContact>.contact-content{
+    width: 100%;
+    height: 400px;
+    /* background-color: brown; */
+    background-color: #FFFFFF;
+    box-shadow: inset 0 0 10px #77746f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.contact-content>h3{
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    color: #141718;
+}
+.contact-content>form{
+    width: 500px;
+    height: 300px;
+    /* background-color: cadetblue; */
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 32px 48px  #1212121A
+}
+.contact-content>form>.input-box{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: chartreuse; */
+    border-bottom: 1px solid #141718;
+}
+.contact-content>form>.input-box>input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'Inter';
+}
+.contact-content>form>button{
+    width: 120px;
+    height: 40px;
+    background-color: #141718;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+.contact-through{
+    width: 100%;
+    height: 200px;
+    /* background-color: aqua; */
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.contact-through>.card1{
+    width: 250px;
+    height: 200px;
+    /* background-color: bisque; */
+    background-color: #F5F6FA;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px #77746f;
+}
+.contact-through>.card1>h3{
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    color: #141718;
+}
+.contact-through>.card1>p{
+    font-family: 'Poppins';
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    color: #141718;
+}

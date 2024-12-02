@@ -1,0 +1,140 @@
+.CheckOutMain{
+    width: 100vw;
+    /* height: 1000px; */
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 80px 160px 80px 160px;
+    /* background-color: aqua; */
+    background-color: #FFFFFF;
+}
+.CheckOutMain>.head{
+    width: 832px;
+    height: 166px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    /* background-color: blue; */
+    background-color: #FFFFFF;
+}
+.head>h3{
+    font-family: 'Poppins';
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 58px;
+    letter-spacing: -1px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+}
+
+.head>.tab-list {
+    width:100%;
+    height: 68px;
+    gap: 32px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    /* background-color: #c56767; */
+}
+.tab-list>.tab-item {
+    width: 256px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 24px;
+    padding: 0px 0px 26px 0px;
+    /* border-bottom: 2px solid #141718; */
+    cursor: pointer;
+    background-color: #f9f9f9;
+    color: #333;
+    border-right: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+}
+.tab-item>.tab-label{
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #23262F;
+}
+.tab-item>.tab-number{
+    width: 42px;
+    height: 42px;
+    padding: 8px 17px 8px 17px;
+    gap: 10px;
+    border-radius: 40px;
+    background-color: #959697;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FCFCFD;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.tab-item:last-child {
+    border-right: none;
+}
+.tab-item.active {
+    /* background-color: #007bff; */
+    color: white;
+    border-bottom: 2px solid #141718;
+}
+.tab-item.completed {
+    /* background-color: #28a745; */
+    color: #28a745;
+    border-bottom: 2px solid #28a745;
+}
+.tab-item:hover {
+    background-color: #ddd;
+}
+.tab-item[style*="none"] {
+    background-color: #c2baba;
+    color: #aaa;
+    cursor: not-allowed;
+}
+/* .tab-number {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    background-color: #fff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+} */
+
+/* Active and completed states for numbers */
+.tab-item.active .tab-number {
+    background-color: #23262F;
+    color: #FCFCFD;
+    /* border-color: #007bff; */
+}
+
+.tab-item.completed .tab-number {
+    background-color: #28a745;
+    color: #FCFCFD;
+    border-color: #28a745;
+}
+

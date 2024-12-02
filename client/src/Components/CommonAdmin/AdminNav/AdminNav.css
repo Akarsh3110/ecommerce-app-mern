@@ -1,0 +1,130 @@
+.AdminNav{
+    width:82.5%;
+    height: 100vh;
+    margin-left: 17.5%;
+}
+.header{
+    width:100%;
+    height: 70px;
+    /* background-color: blue; */
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 30px 0px 78px;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+.header>.search{
+    width: 388px;
+    height: 38px;
+    /* background-color:yellowgreen; */
+    border-radius: 19px;
+    border: 0.6px solid #D5D5D5;
+    background-color: #F5F6FA;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.search>img{
+    width: 15.01px;
+    height: 15.01px;
+}
+
+
+.search>input{
+    width: 90%;
+    font-family: 'Nunito Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.1px;
+    text-align: center;
+    color: #202224;
+    border: none;
+    background: transparent;
+    text-align: left;
+    padding-left: 10px;
+}
+.search>input::placeholder{
+    font-family: 'Nunito Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.1px;
+    text-align: center;
+    color: #202224;
+    text-align: left;
+    padding-left: 10px;
+}
+.header>.profile{
+    width: 169px;
+    height: 44px;
+    /* background-color: bisque; */
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* .profile>img{
+    width:44px;
+    height: 44px;
+    background-color: aqua;
+    border-radius: 50%;
+} */
+
+.profile>.admin-label{
+    width: 44px;
+    height: 44px;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Nunito Sans';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 19.1px;
+    text-align: left;
+    color: #404040;
+}
+.profile>.profile-content{
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+}
+.profile-content>h3{
+    height: 19px;
+    font-family: 'Nunito Sans';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.1px;
+    text-align: left;
+    color: #404040;
+}
+.profile-content>p{
+    height: 16px;
+    font-family: Nunito Sans;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16.37px;
+    text-align: left;
+    color: #565656;
+}
+.profile>button{
+    width: 18px;
+    height: 18px;
+    border: 0.2px solid #5C5C5C;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-layout{
+    width: 100%;
+    height: 89vh;
+    background-color: green;
+    z-index: 0;
+}

@@ -1,0 +1,56 @@
+.Announce{
+    width: 100vw;
+    height: 40px;
+    background-color: #F3F5F7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.announce-content{
+    width: 372px;
+    height: 24px;
+    /* background-color: bisque; */
+    display: flex;
+    gap: 12px;
+    margin: auto;
+}
+.announce-content>.ticket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* background-color: blue; */
+}
+.announce-content>.ticket>img{
+    width: 24px;
+    height: 24px;
+}
+.announce-content>.ticket>p{
+    height: 22px;
+    font-family: 'Inter';
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color:#343839;
+    text-align: center;
+}
+.announce-content>button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    font-family: 'Inter';
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color:#377DFF;
+    cursor: pointer;
+    border-bottom: 1px solid #377DFF;
+}
+.Announce>.close{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}

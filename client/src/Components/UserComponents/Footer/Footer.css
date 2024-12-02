@@ -1,0 +1,127 @@
+.Footer{
+    width: 100vw;
+    height: 249px;
+    /* background-color: aqua; */
+    background-color: #141718;
+    padding: 80px 160px 32px 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 49px;
+    align-items: start;
+}
+.Footer>.footer-top{
+    width: 1070px;
+    height: 24px;
+    /* background-color: blue; */
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-top>.logo{
+    display: flex;
+    gap: 32px;
+    color: #6C7275;
+}
+.logo>h3{
+    width:105px;
+    height: 24px;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.logo>h3>span{
+    color: #6C7275;
+}
+.logo>p{
+    height: 22px;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #E8ECEF;
+}
+.footer-top>.footer-nav{
+    width: 392px;
+    height: 22px;
+    display: flex;
+    gap: 40px;
+}
+.footer-nav>li{
+    list-style: none;
+}
+.footer-nav>li>a{
+    text-decoration: none;
+    height: 22px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    color: #FEFEFE;
+}
+.footer-bottom{
+    width: 1060px;
+    height: 56px;
+    /* background-color: coral; */
+    background-color: transparent;
+    padding: 16px 0px 16px 0px;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    border-top: .5px solid #6C7275;
+}
+.footer-bottom>.copyright{
+    width: 485px;
+    height: 20px;
+    display: flex;
+    gap: 28px;
+}
+.copyright>.copy{
+    height: 20px;
+    font-family:'Poppins';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #E8ECEF;
+}
+.copyright>.privacy{
+    height: 20px;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    color: #FEFEFE;
+}
+.copyright>.terms{
+    height: 20px;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
+    color: #FEFEFE;
+}
+.social-icons{
+    width: 120px;
+    height: 24px;
+    background-color: transparent;
+    display: flex;
+    gap: 24px;
+}
+.social-icons>button{
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.social-icons>button>img{
+    width: 24px;
+    height: 24px;
+}

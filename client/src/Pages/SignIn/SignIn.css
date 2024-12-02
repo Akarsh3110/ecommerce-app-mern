@@ -1,0 +1,143 @@
+.SignIn{
+    width: 100vw;
+    height:100vh;
+    background-color: black;
+    display: flex;
+}
+.signin-left{
+    width: 50%;
+    /* background: url(../../assets/Logo/EcommerceLOGO.jpg); */
+    background: url('../../assets/Logo/EcommerceLOGO-removebg-preview\ \(1\).jpg');
+    background-size: cover;
+}
+.signin-left>h2{
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    padding-top:1rem;
+}
+.signin-right{
+    background-color: #FEFEFE;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signin-right>.signin-form{
+    width: 456px;
+    height: 376px;
+    /* background-color: rgb(57, 107, 107); */
+    background-color:  #FEFEFE;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 32px;
+}
+.signin-form>.signin-head{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 24px;
+}
+.signin-head>h2{
+    color: #141718;
+    font-family: 'Poppins';
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 500;
+}
+.signin-head>p{
+    font-family: 'Inter';
+    font-size:1rem;
+    line-height: 26px;
+    font-weight: 400;
+    color:#141718;
+    ;
+}
+.signin-head>p>a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #38CB89;
+    cursor: pointer;
+
+}
+.signin-form>form{
+    width: 456px;
+    height: 314px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.signin-form>form>.input-box{
+    width: 456px;
+    height: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #38CB89; */
+}
+.signin-form>form>.input-box>img{
+    width: 24px;
+    height: 24px;
+    /* background-color: #141718; */
+    cursor: pointer;
+}
+.signin-form>form>.input-box>input{
+    width: 456px;
+    height: 36px;
+    padding-bottom: 8px;
+    border: none;
+    border-bottom: 1px solid #E8ECEF;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'Inter';
+}
+.signin-form>form>.input-box>input::placeholder{
+    color: #6C7275;
+}
+.signin-form>form>.checkbox-input{
+    width: 456px;
+    height: 26px;
+    /* background-color: red; */
+}
+.signin-form>form>.checkbox-input>label{
+    width:50%;
+    height: 26px;
+    display: flex;
+    gap: 5px;
+    text-align: start;
+    font-family: 'Inter';
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #6C7275;
+    /* background-color: #38CB89; */
+}
+.signin-form>form>.checkbox-input>span{
+    font-weight: 600;
+   color: #141718; 
+   cursor: pointer;
+}
+.signin-form>form>.input-box>label>input{
+    width: 24px;
+    height: 24px;
+    border: 1.5px solid #6C7275;
+    border-radius: 4px;
+}
+.signin-btn{
+    width:456px;
+    height:48px;
+    padding: 10px 40px 10px 40px;
+    gap: 8px;
+    border-radius: 8px;
+    background-color: #141718;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-size: 1rem;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    border: none;
+    cursor: pointer;
+}

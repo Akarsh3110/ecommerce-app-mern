@@ -1,0 +1,186 @@
+.ProductCarousel{
+    width: 100vw;
+    height: 669px;
+    /* background-color: aqua; */
+    background-color: #FFFFFF;
+    padding: 48px 160px 0px 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.ProductCarousel>.productcarousel-head{
+    width: 1070px;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    /* background-color: blue; */
+    background-color: #FFFFFF;
+}
+.productcarousel-head>h2{
+    width: 149px;
+    height: 88px;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.4px;
+    text-align: left;
+    color: #000000;
+}
+.productcarousel-head>button{
+    width:132px;
+    height: 28px;
+    border: none;
+    border-bottom: 1px solid #141718;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    text-align: left;
+    color: #141718;
+    background-color: transparent;
+    cursor: pointer;
+}
+.productcarousel-head>button>img{
+    width: 20px;
+    height: 20px;
+}
+.productlist-scroll{
+    /* width: 1070px; */
+    /* /* height: 520px; */
+    width: 1070px;
+    height: 533px;
+    /* background-color: brown;  */
+    overflow: hidden;
+}
+.productlist{
+    /* width:1070px; */
+    height: 490px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 24px;
+    /* background-color: blueviolet; */
+    background-color: transparent;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.productlist::-webkit-scrollbar{
+    width: 1070px;
+    height: 8px;
+    background-color:#E8ECEF;
+    border-radius: 80px;
+}
+.productlist::-webkit-scrollbar-thumb{
+    width: 834px;
+    height: 4px;
+    border-radius: 80px ;
+    background-color: #343839;
+}
+
+.product{
+    width: 262px;
+    height: 433px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.imagecard{
+    width: 262px;
+    height: 349px;
+    /* background: url('../../../assets/NewArrival/Arrival1.png'); */
+}
+.imagecard>.badges{
+    width: 71px;
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    margin:16px 0px 0px 16px;
+    gap: 8px;
+}
+.badges>h3{
+    width:67px;
+    height:24px;
+    padding: 4px 14px 4px 14px;
+    gap: 8px;
+    border-radius: 4px 0px 0px 0px;
+
+    font-family:'Inter';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+
+}
+.badges>p{
+    width: 71px;
+    height:24px;
+    padding: 4px 14px 4px 14px;
+    gap: 8px;
+    border-radius: 4px 0px 0px 0px;
+    background-color:#38CB89;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    color: #FEFEFE;
+}
+.cardcontent{
+    width: 261px;
+    height: 72px;
+    background-color:#FFFFFF;
+}
+.cardcontent>.stars{
+    width: 88px;
+    height: 16px;
+    font-size: small;
+    display: flex;
+}
+.cardcontent>.stars>img{
+    width: 16px;
+    height: 16px;
+}
+.cardcontent>h3{
+    height: 26px;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    color: #141718;
+}
+.cardcontent>.price{
+    width: 125px;
+    height: 22px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+    background-color: transparent;
+}
+.price>.sale-price{
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+    color: #141718;
+}
+.price>.strike-price{
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    text-decoration-line: line-through;
+    color: #6C7275;
+}
