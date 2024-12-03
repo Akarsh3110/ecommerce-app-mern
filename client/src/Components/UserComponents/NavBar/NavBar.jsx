@@ -5,7 +5,7 @@ import CartIcon from '../../../assets/SimpleIcons/shopping bag.png'
 import ProfileIcon from '../../../assets/SimpleIcons/profile-icon.png'
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux'
-import { logoutUser } from '../../../redux/auth-slice'
+import { logoutUser, resetTokenAndAuthorization } from '../../../redux/auth-slice'
 import CartDrawer from '../CartDrawer/CartDrawer'
 import { fetchCartItems } from '../../../redux/shopCart-slice'
 
@@ -28,7 +28,10 @@ function NavBar() {
 
   const dispatch=useDispatch()
   const handleLogOut=()=>{
-    dispatch(logoutUser())
+    // dispatch(logoutUser())
+    dispatch(resetTokenAndAuthorization());
+    sessionStorage.clear();
+    navigate('/signin')
   }
 
   const [isCartOpen, setIsCartOpen] = useState(false);

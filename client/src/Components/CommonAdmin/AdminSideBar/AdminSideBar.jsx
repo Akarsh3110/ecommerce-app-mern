@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import "../AdminSideBar/AdminSideBar.css"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from 'react-redux';
-import { logoutUser } from '../../../redux/auth-slice';
+import { logoutUser, resetTokenAndAuthorization } from '../../../redux/auth-slice';
 
 function AdminSideBar() {
+  const navigate=useNavigate()
     const [activeIndex, setActiveIndex] = useState(0);
 
   const handleClick = (index) => {
@@ -13,7 +14,10 @@ function AdminSideBar() {
    
   const dispatch=useDispatch()
   const handleLogout=()=>{
-    dispatch(logoutUser())
+    // dispatch(logoutUser())
+    dispatch(resetTokenAndAuthorization());
+    sessionStorage.clear();
+    navigate('/signin')
   }
 
   return (
