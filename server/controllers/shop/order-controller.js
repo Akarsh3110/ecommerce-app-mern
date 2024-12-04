@@ -34,9 +34,13 @@ const createOrder=async(req,res)=>{
                 payment_method:'paypal'
             },
             redirect_urls:{
-                // return_url:'http://localhost:3000/user/paypal-return',
-                return_url: `${process.env.CLIENT_BASE_URL}/user/checkout?return_url=orderComplete`,
-                cancel_url:`${process.env.CLIENT_BASE_URL}/user/paypal-cancel`
+                return_url:'http://localhost:3000/paypal-return',
+                // return_url: `${process.env.CLIENT_BASE_URL}/user/checkout?return_url=orderComplete`,
+                // return_url: `${process.env.CLIENT_BASE_URL}/user/checkout`,
+                // return_url: `${process.env.CLIENT_BASE_URL}/user/paypal-return`,
+                // return_url: `${process.env.CLIENT_BASE_URL}/user/checkout?return_url=${encodeURIComponent('orderComplete')}`,
+                // return_url: `http://localhost:3000/user/checkout?return_url=orderComplete`,
+                cancel_url:`${process.env.CLIENT_BASE_URL}/user/checkout`
             },
             transactions:[
                 {
@@ -86,6 +90,7 @@ const createOrder=async(req,res)=>{
                 await newlyCreatedOrder.save();
 
                 const approvalURL=paymentInfo.links.find(link=>link.rel==='approval_url').href;
+                console.log('Approval URL:', approvalURL);
 
                 res.status(200).json({
                     success:true,
@@ -107,7 +112,7 @@ const createOrder=async(req,res)=>{
 const capturePayment=async(req,res)=>{
     try {
         const {paymentId,payerId,orderId}=req.body;
-
+        console.log('paymentttt',paymentId,payerId,orderId)
         let order=await Order.findById(orderId);
         if(!order){
             return res.status(404).json({

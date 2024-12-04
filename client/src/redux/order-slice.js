@@ -82,7 +82,15 @@ const shopOrderSlice=createSlice({
         }).addCase(getOrderDetails.rejected,(state)=>{
             state.isLoading=false;
             state.orderDetail=null;
-        })
+        }).addCase(capturePayment.pending, (state) => {
+            state.isLoading = true;
+        }).addCase(capturePayment.fulfilled, (state, action) => {
+            state.isLoading = false;
+            console.log('Payment captured successfully:', action.payload.data);
+        }).addCase(capturePayment.rejected, (state, action) => {
+            state.isLoading = false;
+            console.error('Payment capture failed:', action.error.message);
+        });
     }
 })
 

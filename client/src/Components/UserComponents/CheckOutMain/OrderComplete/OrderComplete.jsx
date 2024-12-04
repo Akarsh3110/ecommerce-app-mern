@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import '../OrderComplete/OrderComplete.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { useLocation, useNavigate } from 'react-router-dom';
 import {  getAllOrdersByUserId, getOrderDetails } from '../../../../redux/order-slice';
-function OrderComplete({currentOrderId}) {
+import { EditFormContext } from '../../../../Contexts/Editform';
+function OrderComplete() {
+    const{currentOrderId,setCurrentOrderId}=useContext(EditFormContext)
     const navigate=useNavigate()
     
     const {user}=useSelector(state=>state.auth)

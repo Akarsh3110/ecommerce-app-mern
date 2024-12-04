@@ -172,12 +172,15 @@ function handleManageAddress() {
             // window.location.href = approvalURL;  // Redirect to PayPal approval URL
             // }
 
+            
       }
 
       console.log("setttt",setIsPaymentStart);
       
       if (approvalURL) {
         window.location.href = approvalURL;
+        console.log(approvalURL,"rererere");
+        
       }
     
     

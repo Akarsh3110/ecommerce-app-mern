@@ -31,6 +31,9 @@ import PaypalReturn from './Components/UserComponents/PaypalReturn';
 import Success from './Components/UserComponents/Success/Success';
 import ProductStock from './Components/AdminComponents/ProductStock/ProductStock';
 import AdminInbox from './Components/AdminComponents/AdminInbox/AdminInbox';
+// import { Skeleton } from "react-loading-skeleton";
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 // const initialState={
 //   image:null,
@@ -63,6 +66,7 @@ function App() {
   })
   const [currentEditedId, setcurrentEditedId] = useState(null)
   const [currentSelectedAddress, setCurrentSelectedAddress] = useState(null)
+  const [currentOrderId,setCurrentOrderId]=useState(null)
   // const isAuthenticated=false;
   // const user=null
 
@@ -76,8 +80,16 @@ function App() {
     dispatch(checkAuth(token))
   }, [dispatch])
 
-  if(isLoading) return <div>Loading</div>
+  useEffect(() => {
+    console.log('Current location', window.location.href)
+  }, [])
 
+  if(isLoading) return  <div className='loading'><Skeleton customHighlightBackground="linear-gradient(90deg, var(--base-color) 40%, var(--highlight-color) 50%, var(--base-color) 60%)"  count={100}  height={1000}/></div>
+
+  // <SkeletonTheme width={1000} height={1000} marginLeft={40}>
+  //                           <Skeleton width={1000} height={1000}/>
+  //                     </SkeletonTheme>
+  
   console.log('Current Context State:', {
     formValues,
     currentSelectedAddress,
@@ -86,9 +98,10 @@ function App() {
     selectedColor,
 });
 
+
   return (
     <div className="App">
-    <EditFormContext.Provider value={{formValues,setFormValues,currentEditedId, setcurrentEditedId,productDetails, setProductDetails,shippingCost, setShippingCost,selectedColor, setSelectedColor,currentSelectedAddress, setCurrentSelectedAddress}}>
+    <EditFormContext.Provider value={{formValues,setFormValues,currentEditedId, setcurrentEditedId,productDetails, setProductDetails,shippingCost, setShippingCost,selectedColor, setSelectedColor,currentSelectedAddress, setCurrentSelectedAddress,currentOrderId,setCurrentOrderId}}>
       <Routes>
         <Route path='/'
            element={
@@ -107,10 +120,11 @@ function App() {
           <Route path='contact' element={<Contact/>}/>
           <Route path='checkout' element={<CheckOut/>}/>
           <Route path='account' element={<UserAccount/>}/>
-          <Route path='paypal-return' element={<PaypalReturn/>}/>
+          
           <Route path='payment-success' element={<Success/>}/>
           <Route path='search' element={<UserSearch/>}/>
         </Route> 
+        <Route path='/paypal-return' element={<PaypalReturn/>}/>
         <Route path='/signup' element={
           <CheckAuth isAuthenticated={isAuthenticated} user={user}>
             <SignUp/>
@@ -140,6 +154,7 @@ function App() {
         
         </Route>
         <Route path='/unauth-page' element={<UnAuth/>}/>
+        <Route path='/*' element={<UnAuth/>}/>
       </Routes>
     </EditFormContext.Provider> 
     </div>

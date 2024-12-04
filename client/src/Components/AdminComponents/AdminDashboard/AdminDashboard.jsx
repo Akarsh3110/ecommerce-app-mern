@@ -38,7 +38,7 @@ function AdminDashboard() {
             <div className="card-top">
               <div className="card-top-left">
                 <p>Total User</p>
-                <h3>{usersList.length}</h3>
+                <h3>{usersList.length || 12}</h3>
               </div>
               <div className="card-top-right">
                 <img src={TotalUserIcon} alt='TotalUserIcon' />

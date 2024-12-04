@@ -42,41 +42,45 @@ function CheckOutMain() {
         { label: "Order Complete" },
     ];
 
-    const [currentOrderId,setCurrentOrderId]=useState(null)
+    // const [currentOrderId,setCurrentOrderId]=useState(null)
 
     const navigate = useNavigate();
     const dispatch=useDispatch();
     // const location=useLocation();
     const params=new URLSearchParams(location.search);
-    const paymentId=params.get('paymentId');
-    const payerId=params.get('PayerID');
+    // const paymentId=params.get('paymentId');
+    // const payerId=params.get('PayerID');
     const returnUrl = params.get('return_url');
-
-    useEffect(() => {
-        if(paymentId && payerId){
-            const orderId=JSON.parse(sessionStorage.getItem('currentOrderId'));
-            if(orderId){
-                setCurrentOrderId(orderId);
-                console.log("After setting currentOrderId:", orderId);
-                dispatch(capturePayment({paymentId,payerId,orderId})).then(data=>{
-                console.log("payment CApture response",data);
+    // console.log('paymentId:', paymentId, 'payerId:', payerId);
+    // useEffect(() => {
+    //     console.log('Inside useEffect');
+    //     console.log('paymentId:', paymentId, 'payerId:', payerId);
+    //     if(paymentId && payerId){
+    //         const orderId=JSON.parse(sessionStorage.getItem('currentOrderId'));
+    //         console.log('MyId',orderId)
+    //         if(orderId){
+    //             setCurrentOrderId(orderId);
+    //             console.log("After setting currentOrderId:", orderId);
+    //             dispatch(capturePayment({paymentId,payerId,orderId})).then(data=>{
+    //             console.log("payment CApture response",data);
                 
-                if(data?.payload?.success){
+    //             if(data?.payload?.success){
                     
-                    sessionStorage.removeItem('currentOrderId');
-                    navigate('/user/checkout?return_url=orderComplete');
-                    // window.location.href='/user/checkout?return_url=orderComplete';
-                }
-            })
-            }
+    //                 sessionStorage.removeItem('currentOrderId');
+    //                 // setActiveTab(2);
+    //                 navigate('/user/checkout?return_url=orderComplete');
+    //                 // window.location.href='/user/checkout?return_url=orderComplete';
+    //             }
+    //         })
+    //         }
             
-        }
-    }, [paymentId,payerId,dispatch])
+    //     }
+    // }, [paymentId,payerId,dispatch])
     // Tab components
     const tabComponents = [
         <CheckOutCart tabs={tabs} completeCurrentTab={completeCurrentTab} activeTab={activeTab} />,
         <CheckOutDetails tabs={tabs} completeCurrentTab={completeCurrentTab} activeTab={activeTab} currentSelectedAddress={currentSelectedAddress} setCurrentSelectedAddress={setCurrentSelectedAddress}/>,
-        <OrderComplete tabs={tabs} currentOrderId={currentOrderId} />,
+        <OrderComplete tabs={tabs}  />,
     ];
 
     
