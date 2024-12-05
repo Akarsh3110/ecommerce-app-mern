@@ -34,10 +34,10 @@ const createOrder=async(req,res)=>{
                 payment_method:'paypal'
             },
             redirect_urls:{
-                return_url:'http://localhost:3000/paypal-return',
+                // return_url:'http://localhost:3000/paypal-return',
                 // return_url: `${process.env.CLIENT_BASE_URL}/user/checkout?return_url=orderComplete`,
                 // return_url: `${process.env.CLIENT_BASE_URL}/user/checkout`,
-                // return_url: `${process.env.CLIENT_BASE_URL}/user/paypal-return`,
+                return_url: `${process.env.CLIENT_BASE_URL}/paypal-return`,
                 // return_url: `${process.env.CLIENT_BASE_URL}/user/checkout?return_url=${encodeURIComponent('orderComplete')}`,
                 // return_url: `http://localhost:3000/user/checkout?return_url=orderComplete`,
                 cancel_url:`${process.env.CLIENT_BASE_URL}/user/checkout`
